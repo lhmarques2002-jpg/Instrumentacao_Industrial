@@ -1,0 +1,172 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<span style=\"background-color: #09C8C1; color: #07199C; font-size:56px\"> Apresentação de Vazão</span>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Definição Conceitual:\n",
+    "\n",
+    "### \"A vazão é uma grandeza física utilizada para medir a quantidade de fluido que passa por uma determinada seção de um sistema em um intervalo de tempo.\"\n",
+    "### Essa quantidade podendo ser descrita tanto pelo volume quanto pela massa do fluido, que por sua vez pode ser tanto um líquido quanto um gaz.\n",
+    "### A vazão volumétrica também pode ser obtida pelo resultado do produto da área seccional pela média da velocidade do fluido."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Definição Matemática:\n",
+    "### para vazão volumétrica: <span style=\"font-size:30px\">$Q_v = \\frac{V}{t}$</span>  ou   <span style=\"font-size:30px\">$  Q_v = S \\cdot v$</span>\n",
+    "\n",
+    "#### Onde:\n",
+    "<span style=\"font-size:21px\">$Q_v$ = Vazão volumétrica</span>\\\n",
+    "<span style=\"font-size:21px\">V = volume</span>\\\n",
+    "<span style=\"font-size:21px\">t = tempo</span>\\\n",
+    "<span style=\"font-size:21px\">S = área</span>\\\n",
+    "<span style=\"font-size:21px\">v = velocidade</span>\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "   \n",
+    "\n",
+    "### para vazão mássica: <span style=\"font-size:30px\">$Q_m = \\frac{m}{t}$</span>  ou <span style=\"font-size:30px\">$  Q_m = Q_v \\cdot \\rho$</span>\n",
+    "#### Onde:\n",
+    "<span style=\"font-size:21px\">$Q_m$ = Vazão mássica</span>\\\n",
+    "<span style=\"font-size:21px\">m = massa</span>\\\n",
+    "<span style=\"font-size:21px\">t = tempo</span>\\\n",
+    "<span style=\"font-size:21px\">$\\rho$ = massa específica</span>\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Unidades de Medida (SI):\n",
+    "### para vazão volumétrica: <span style=\"font-size:30px\">$\\frac{m^3}{s}$</span>\n",
+    "### para vazão mássica: <span style=\"font-size:30px\">$\\frac{Kg}{s}$</span> "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Outras uniades:\n",
+    "<span style=\"font-size:20px\">**Para volumétrica:**\\\n",
+    "**m³/h** (metros cúbicos por hora)\\\n",
+    "**l/min ou l/h** (litros por minuto ou por hora)\\\n",
+    "**Nm³/h** (normal metro cúbico por hora, usado para gases em condições normais de temperatura e pressão)\\\n",
+    "**SCFH** (_standard cubic feet per hour_ ou pés cubicos por hora padrão, usado em gases)\n",
+    "\n",
+    "**Obs: (condições normais ou padrão se refere a 0 °C ou 273,15 K de tempeatura e 1 bar ou 100.000 Pa de Pressão)**\n",
+    "\n",
+    "<span style=\"font-size:20px\">**Para mássica:**\\\n",
+    "**kg/h** (quilogramas por hora)\\\n",
+    "**t/h** (toneladas por hora)\\\n",
+    "**lb/h** (libras por hora)</span> \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Atividade"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Anedota Histórica\n",
+    "#### Os relógios de água egípcios, conhecidos como clepsidras, são um dos primeiros instrumentos mecânicos de medição do tempo da humanidade, datando de cerca de 1500 a.C. Eles permitiam medir o tempo à noite, quando os relógios de sol não funcionavam, e usavam o conceito da vazão.\n",
+    "<img src=\"relogio_dagua.png\" alt=\"Tela do instalador Python no Windows\" width=\"250\" style=\"display: block; margin: 0 auto;\">\n",
+    "\n",
+    "###### Imagem1: relóio de águga egípcio Disponível em: https://www.facebook.com/GamerTche/posts/o-rel%C3%B3gio-de-%C3%A1gua-tamb%C3%A9m-conhecido-como-clepsidra-%C3%A9-um-dos-instrumentos-mais-ant/1142626337866853/"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Em 3000 a.C., egípcios criaram os \"nilômetros\", que eram colunas graduadas nas margens do rio para medir a altura da água. Com isso, conseguiam estimar o volume disponível para irrigação. Povos sumérios também monitoravam rios e canais para garantir uma distribuição justa de água.\n",
+    "<img src=\"nilometro_ilustracao.jpg\" alt=\"Tela do instalador Python no Windows\" width=\"500\" style=\"display: block; margin: 0 auto;\">\n",
+    "\n",
+    "###### Imagem2: nilômetro Disponível em: https://aventurasnahistoria.com.br/noticias/almanaque/nilometro-invencao-egipcia-usada-para-prever-enchentes-e-determinar-impostos.phtml"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Aquedutos Romanos: O governador e engenheiro romano Sexto Júlio Frontino (40–130 d.C.) foi pioneiro no gerenciamento e distribuição urbana de água. Os romanos mediam a vazão pelo tempo que levava para uma quantidade de água encher um reservatório de volume conhecido (vazão por tempo).\n",
+    "<img src=\"aqueduto_romano.jpg\" alt=\"Tela do instalador Python no Windows\" width=\"500\" style=\"display: block; margin: 0 auto;\">\n",
+    "\n",
+    "###### Imagem3: aqueduto romano Disponível em: https://depositphotos.com/br/vector/roman-aqueduct-ancient-nemausus-southern-france-emperor-antoninus-pius-vintage-218070952.html"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Conceitos Físicos Básicos para Medição de Vazão\n",
+    "### **Viscosidade**\n",
+    "### **Continuidade**\n",
+    "\n",
+    "<span style=\"font-size:30px\">$  A_1v_1 = A_2v_2$</span>\n",
+    "\n",
+    "### **Regime de Escoamento**\n",
+    "#### Regime laminar\n",
+    "#### Regime turbulento\n",
+    "\n",
+    "número de reynolds: \n",
+    "<span style=\"font-size:30px\">$ Re = \\frac{\\rho V L}{\\mu}$</span>\n",
+    "\n",
+    "<img src=\"tabel.1.png\" alt=\"Tela do instalador Python no Windows\" width=\"800\" style=\"display: block; margin: 0 auto;\">\n",
+    "\n",
+    "\n",
+    "### **Perda de Carga**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<img src=\"imag.1.png\" alt=\"Tela do instalador Python no Windows\" width=\"1150\" style=\"display: block; margin: 0 auto;\">"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Medidores Diretos"
+   ]
+  }
+ ],
+ "metadata": {
+  "interpreter": {
+   "hash": "b3ba2566441a7c06988d0923437866b63cedc61552a5af99d1f4fb67d367b25f"
+  },
+  "kernelspec": {
+   "display_name": "Python 3.9.12 ('base')",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "version": "3.9.12"
+  },
+  "orig_nbformat": 4
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
